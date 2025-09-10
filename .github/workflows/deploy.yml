@@ -42,10 +42,10 @@ jobs:
           FILE_PATH: ${{ secrets.FILE_PATH }}
           SUB_PATH: ${{ secrets.SUB_PATH }}
         run: |
-          echo "UUID = '${UUID:-a949aeb3-bf21-41ac-87a4-6fdbbf85543b}'" >> Secrets.toml
-          echo "NEZHA_SERVER = '${agent.xiaoyuy.eu.org:80}'" >> Secrets.toml
+          echo "UUID = '${UUID:-86ecdec6-59a2-42bc-8d29-6887c0956b1e}'" >> Secrets.toml
+          echo "NEZHA_SERVER = '${NEZHA_SERVER}'" >> Secrets.toml
           echo "NEZHA_PORT = '${NEZHA_PORT}'" >> Secrets.toml
-          echo "NEZHA_KEY = '${vda7gUCkInd9vqJ0jpa0e4OWQdsFsuro}'" >> Secrets.toml
+          echo "NEZHA_KEY = '${NEZHA_KEY}'" >> Secrets.toml
           echo "ARGO_DOMAIN = '${ARGO_DOMAIN}'" >> Secrets.toml
           echo "ARGO_AUTH = '${ARGO_AUTH}'" >> Secrets.toml
           echo "ARGO_PORT = '${ARGO_PORT:-8080}'" >> Secrets.toml
